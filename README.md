@@ -38,3 +38,4 @@ spec.ts -> unit testing file
 1. 元件型指令：為了區分每一個元件上都會有一個attribute
 2. ngstyle or ngclass:can change the appearance of component
 3. ngif ngfor ngswitch is structure directive which can control dom structure 
+4. app.config.ts 需要加入provideHttpClient() 否則service httpclient 無法使用 應是以往module 使用到的httpClientModule 

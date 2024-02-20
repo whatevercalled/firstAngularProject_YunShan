@@ -7,7 +7,6 @@ export class HeaderArticleService {
   jsonDataResult:any;
   constructor(private http:HttpClient) { 
     this.http.get('api/articles.json').subscribe((res)=>{
-      alert(11);
       this.jsonDataResult=res;
     })
   }

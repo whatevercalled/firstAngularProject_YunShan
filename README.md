@@ -27,6 +27,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 # custom note
-angular.json ->cli reference
+angular.json ->cli reference   
 .editorconfig -> visual studio code editor config
 app.component.spec.ts -> unit testing 定義如何測試component
+assets folder -> static for example: css image
+.gitkeep -> empty folder will not push onto github should have a gitkeep file to maintain ci/cd
+spec.ts -> unit testing file 

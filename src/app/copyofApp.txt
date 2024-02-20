@@ -1,0 +1,5 @@
+<div class="flex flex-column align-items-center justify-content-center">
+<p-card header="Title">
+  <app-to-do-collection><app-to-do-single></app-to-do-single></app-to-do-collection>
+</p-card>
+</div>

@@ -33,3 +33,8 @@ app.component.spec.ts -> unit testing 定義如何測試component
 assets folder -> static for example: css image
 .gitkeep -> empty folder will not push onto github should have a gitkeep file to maintain ci/cd
 spec.ts -> unit testing file 
+# 三種directive 指令：
+
+1. 元件型指令：為了區分每一個元件上都會有一個attribute
+2. ngstyle or ngclass:can change the appearance of component
+3. ngif ngfor ngswitch is structure directive which can control dom structure

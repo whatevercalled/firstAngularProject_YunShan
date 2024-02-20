@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  title = 'my-first-project';
+  url="http://blog.miniasp.com";
+  keyword="";
+  constructor(){
+    setTimeout(()=>{
 
+      this.title="the world wide web";
+    },2000)
+  }
 }

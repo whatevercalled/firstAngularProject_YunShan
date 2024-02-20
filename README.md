@@ -37,4 +37,4 @@ spec.ts -> unit testing file
 
 1. 元件型指令：為了區分每一個元件上都會有一個attribute
 2. ngstyle or ngclass:can change the appearance of component
-3. ngif ngfor ngswitch is structure directive which can control dom structure
+3. ngif ngfor ngswitch is structure directive which can control dom structure 

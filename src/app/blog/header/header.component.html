@@ -24,14 +24,14 @@
     <div class="title-wrapper">
       <div class="container">
 
-        <img src="/assets/images/logo.png" class="pull-left logo" alt="The Will Will Web">
+        <img (click)="counterplus()" src="/assets/images/logo.png" class="pull-left logo" alt="The Will Will Web">
 
         <div class="pull-left">
-          <h1><a [href]="url">{{title}}</a></h1>
+          <h1><a [href]="url" [class.highlight]="counter">{{title}}</a></h1>
           <h3>記載著 Will 在網路世界的學習心得與技術分享</h3>
         </div>
 
-        <div id="social-icons" class="pull-right social-icon">
+        <div *ngIf="counter" id="social-icons" class="pull-right social-icon">
           <a href="https://www.facebook.com/will.fans" title="Will 保哥的技術交流中心" target="_blank">
             <img src="/assets/images/facebook.png">
           </a>

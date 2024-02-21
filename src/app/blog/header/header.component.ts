@@ -22,10 +22,10 @@ export class HeaderComponent {
 
     this.thecount++;
   }
-  constructor(private articleService:HeaderArticleService){
-    setTimeout(()=>{
-      console.log(this.articleService.jsonDataResult);
-      this.title="the world wide web";
-    },2000)
+  constructor(){
+    // setTimeout(()=>{
+    //   console.log(this.articleService.jsonDataResult);
+    //   this.title="the world wide web";
+    // },2000)
   }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import {ButtonModule} from 'primeng/button';
 import {PanelModule} from 'primeng/panel';
@@ -8,10 +9,13 @@ import { ToDoSingleComponent} from './component/to-do-single/to-do-single.compon
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent as WillBlogHeaderComponent } from './blog/header/header.component';
 import { FooterComponent as WillBlogFooterComponent } from './blog/footer/footer.component';
+import { HeaderArticleService } from './service/header-article.service';
+import { ArticleListComponent } from './article/article-list/article-list.component';
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,
+    CommonModule,
     ButtonModule,
     PanelModule,
     CardModule,
@@ -19,11 +23,18 @@ import { FooterComponent as WillBlogFooterComponent } from './blog/footer/footer
     ToDoSingleComponent,
     FormsModule,
     WillBlogHeaderComponent,
-    WillBlogFooterComponent
+    WillBlogFooterComponent,
+  
+    ArticleListComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
     keyword="";
+    get articles(){
+      return this.articleService.jsonDataResult;
+    }
+    constructor(private articleService:HeaderArticleService){
+    }
 }
